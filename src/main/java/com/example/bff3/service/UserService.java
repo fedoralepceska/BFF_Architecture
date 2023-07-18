@@ -1,23 +1,11 @@
 package com.example.bff3.service;
 
 import com.example.bff3.model.User;
-import com.example.bff3.repository.UserRepository;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+import com.example.bff3.model.UserRole;
+import org.springframework.security.core.userdetails.UserDetailsService;
 
-@Service
-public class UserService {
+public interface UserService extends UserDetailsService {
 
-    private final UserRepository userRepository;
-
-    @Autowired
-    public UserService(UserRepository userRepository) {
-        this.userRepository = userRepository;
-    }
-
-    public void saveUser(User user) {
-        userRepository.save(user);
-    }
-
-    // Other service methods if needed...
+    User register(String username, String password, String repeatPassword, String name, String surname, UserRole role);
 }
+

@@ -1,6 +1,13 @@
 package com.example.bff3.model;
 
-public enum UserRole {
+import org.springframework.security.core.GrantedAuthority;
+
+public enum UserRole implements GrantedAuthority {
     DOCTOR,
-    PATIENT
+    PATIENT;
+
+    @Override
+    public String getAuthority() {
+        return name();
+    }
 }
