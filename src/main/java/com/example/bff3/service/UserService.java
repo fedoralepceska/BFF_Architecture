@@ -1,2 +1,23 @@
-package com.example.bff3.service;public class UserService {
+package com.example.bff3.service;
+
+import com.example.bff3.model.User;
+import com.example.bff3.repository.UserRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
+public class UserService {
+
+    private final UserRepository userRepository;
+
+    @Autowired
+    public UserService(UserRepository userRepository) {
+        this.userRepository = userRepository;
+    }
+
+    public void saveUser(User user) {
+        userRepository.save(user);
+    }
+
+    // Other service methods if needed...
 }

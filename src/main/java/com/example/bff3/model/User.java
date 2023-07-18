@@ -1,9 +1,10 @@
-package com.example.bff2.model;
+package com.example.bff3.model;
 
 import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
+@Table(name = "users")
 public class User implements Serializable {
 
     @Id

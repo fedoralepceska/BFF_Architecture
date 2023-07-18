@@ -1,7 +1,7 @@
-package com.example.bff2.service;
+package com.example.bff3.service;
 
-import com.example.bff2.model.User;
-import com.example.bff2.repository.UserRepository;
+import com.example.bff3.model.User;
+import com.example.bff3.repository.UserRepository;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

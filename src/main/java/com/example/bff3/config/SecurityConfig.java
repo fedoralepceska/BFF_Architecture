@@ -1,6 +1,6 @@
-package com.example.bff2.config;
+package com.example.bff3.config;
 
-import com.example.bff2.model.UserRole;
+import com.example.bff3.model.UserRole;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;

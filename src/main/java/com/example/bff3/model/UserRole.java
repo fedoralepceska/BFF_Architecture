@@ -1,4 +1,4 @@
-package com.example.bff2.model;
+package com.example.bff3.model;
 
 public enum UserRole {
     DOCTOR,
